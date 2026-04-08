@@ -129,7 +129,13 @@ const {name, age} = req.query;
 
 
 // Route param middleware example: /users/42
-
+app.param("userId", (req,res,next,userId)=>{if (isNaN(userId)) {
+   if (userId <= 0) {
+   return res.status(400).json({ ok:false, error:"userId must be positive number" });
+}}
+  req.userIdNum = Number(userId);
+  next();
+});
 
 // Route params: /users/:userId route
 
