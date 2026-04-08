@@ -7,6 +7,7 @@ Back-end Lab — Express request data
 LAB SETUP INSTRUCTIONS
 ===================================================================
 
+
 1. Navigate to the project directory:
    Open your terminal and run:
       cd 6-4-express-request-data
